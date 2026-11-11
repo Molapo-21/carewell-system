@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Search, MapPin, Star, Clock, CalendarDays, ChevronRight, ArrowLeft, Check, Bell, Heart, X, Stethoscope, LogOut, LockKeyhole, UserRound } from 'lucide-react';
 
-const API = 'http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 const request = async (path, options = {}) => {
   const response = await fetch(`${API}${path}`, {
     credentials: 'include',
