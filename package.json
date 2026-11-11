@@ -1,0 +1,32 @@
+{
+  "name": "carewell-hci-system",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/src/index.js",
+    "client": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "start": "node server/src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-mysql-session": "^3.0.3",
+    "express-session": "^1.18.1",
+    "lucide-react": "^0.468.0",
+    "mysql2": "^3.11.5",
+    "nodemailer": "^10.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "vite": "^6.0.1"
+  }
+}
